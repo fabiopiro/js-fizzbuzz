@@ -19,25 +19,29 @@ for (i = 1; i <= 100; i++) {
 
     numero = i;
     // console.log(numero);
-    
+    // document.getElementById("lista").innerHTML += "<li>" + numero + "</li>"
+
     if (i % 3 == 0 && i % 5 == 0) {
         numero = "BuzzFizz";
         console.log(numero);
+        document.getElementById("lista").innerHTML += '<li><span class="buzz_fizz">' + numero + "</span></li>"
         // console.log("BuzzFizz");
 
     } else if (i % 3 == 0) {
         numero = "Buzz";
         console.log(numero);
-        // console.log("Fizz");
+        document.getElementById("lista").innerHTML += '<li><span class="buzz">' + numero + "</span></li>"
 
     } else if (i % 5 == 0) {
         numero = "Fizz";
         console.log(numero);
-        // console.log("Buzz");
+        document.getElementById("lista").innerHTML += '<li><span class="fizz">' + numero + "</span></li>"
 
     } else {
         numero = i;
         console.log(numero);
+        document.getElementById("lista").innerHTML += '<li><span class="number">' + numero + "</span></li>"
+
     }
 } 
 

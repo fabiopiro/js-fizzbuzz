@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+#container {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+#lista {
+    list-style: none;
+}
+
+#lista li {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.buzz,
+.fizz,
+.buzz_fizz {
+    color: black;
+}
+
+
+.buzz {
+    background-color: yellow;
+}
+.fizz {
+    background-color: orange;
+}
+.buzz_fizz {
+    background: linear-gradient(yellow , orange);
+}
