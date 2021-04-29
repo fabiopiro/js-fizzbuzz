@@ -16,22 +16,28 @@ var numero = 1;
 
 for (i = 1; i <= 100; i++) {
     // console.log(i);
-    
-    numero = i;
-    console.log(numero);
 
+    numero = i;
+    // console.log(numero);
+    
     if (i % 3 == 0 && i % 5 == 0) {
-        
-        console.log("BuzzFizz");
+        numero = "BuzzFizz";
+        console.log(numero);
+        // console.log("BuzzFizz");
 
     } else if (i % 3 == 0) {
-
-        console.log("Fizz");
+        numero = "Buzz";
+        console.log(numero);
+        // console.log("Fizz");
 
     } else if (i % 5 == 0) {
+        numero = "Fizz";
+        console.log(numero);
+        // console.log("Buzz");
 
-        console.log("Buzz");
-
-    } 
+    } else {
+        numero = i;
+        console.log(numero);
+    }
 } 
 
